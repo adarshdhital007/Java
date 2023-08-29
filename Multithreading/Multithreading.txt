@@ -1,0 +1,42 @@
+Concurrency is the ability to run several parts of a program or several programs in parallel.
+It can improve the throughput of a program if certain tasks can be performed asynchoronously or in parallel.
+
+The performance gain be calculated by Amldahl's Law, which if given by 1/F+((1-F)/n)
+
+where F is the percentage of the program that cannot run in parallel and n is the number of processes
+
+Two problems are associated with Concurrency
+Visibility problem
+Access problem
+The both can lead to likeness failure and safety failure.
+
+What is process and thread?
+The executable program loaded in memory is called process.
+It has it's own address space.
+Each process may execute a different program.
+
+The sequentially executed streams of instructions are known as threads.
+One thread shares address space with other threads.
+Thread has it's own execution context (Program Counter, Call Stack)
+Threading is also knows as lightweight process
+
+Two types of multithreaded application are present:
+a)One application that makes many threads to do many tasks in parallel , i.e no communication  between the threads
+b)Another application that makes many threads not to do many tasks concurrently, i.e communication exists between the threads
+
+
+Multithreading
+
+It is a technique that allows a program or a process to execute many tasks concurrently (at the same time and in a parallel manner)
+
+A running thread may enter into any non-runnable state, depending upon the circumstances .A thread cannot enter directly
+to the running state from non runnable state.Some of the non-runnable states are:
+
+Sleeping:The thread is still alive, but is not runnable on this state.If a particular events occur, it might return to runnable state later.
+A thread sleeps for a specified amount of time on this state. sleep () method is used to stop the running state of a thread
+
+Waiting for notification: A thread waits for notification from another thread.The thread sends back to runnable sate after sending notification from another thread.
+
+Blocked on I/O : The thread waits for completion of blocking operation . A thread can enter on this state because of waiting I/O resource. In this case, the thread sends back to runnable state after the availability of resources.
+
+it allows a process to run its tasks in parallel mode on a single processor system
