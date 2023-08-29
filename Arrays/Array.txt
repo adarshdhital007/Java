@@ -1,0 +1,16 @@
+Array
+Linear homogeneous data structure
+Simply a collection of similar type elements
+Element present in the array is accessed through its index
+
+In general to create an array  three steps are to be followed :
+Declaration
+Construction
+Initializatioin
+
+int[] ints ->is an integer array variable
+double[] dubs ->is a double array variable
+char[] chars ->chars is a chaacter array variable
+
+
+
